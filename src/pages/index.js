@@ -265,13 +265,36 @@ export default function Home() {
           <img src="logo4.png" className="w-[12em]"></img>
         </div>
       </div>
+      <div className="px-40">
+        <h2 className="text-4xl font-semibold text-center pb-4">
+          Meet <span className="text-[#25CA0A]">Our Team</span>
+        </h2>
+
+        <div className="grid grid-cols-3 gap-x-10 place-items-center">
+          <div className="font-medium">
+            <img src="/person.png" className="pl-8 w-3/4" />
+            <h4 className="text-[#093A01]">Kylan Gentry</h4>
+            <p className="text-[#25CA0A]">CEO & Cofounder</p>
+          </div>
+          <div className="font-medium">
+            <img src="/person.png" className="pl-8 w-3/4" />
+            <h4 className="text-[#093A01]">Kylan Gentry</h4>
+            <p className="text-[#25CA0A]">CEO & Cofounder</p>
+          </div>
+          <div className="font-medium">
+            <img src="/person.png" className="pl-8 w-3/4" />
+            <h4 className="text-[#093A01]">Kylan Gentry</h4>
+            <p className="text-[#25CA0A]">CEO & Cofounder</p>
+          </div>
+        </div>
+      </div>
       <div className="pl-20 py-5 text-[#093A01]/95">
-        <h3 className="font-semibold text-2xl">Contact Us</h3>
-        <div className="relative">
+        <div className="relative py-72">
+          <h3 className="font-semibold text-2xl">Contact Us</h3>
           <form
             action="#"
             onsubmit={(e) => {}}
-            className="gap-y-4 flex py-72 flex-col mt-10 relative md:w-1/2"
+            className="gap-y-4 flex  flex-col mt-10 relative md:w-1/2"
           >
             <label className="font-bold">Name</label>
             <input
