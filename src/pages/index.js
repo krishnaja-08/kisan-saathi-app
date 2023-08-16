@@ -256,13 +256,60 @@ export default function Home() {
       </div>
       <div className="flex flex-col items-center py-12 gap-12">
         <h2 className="text-4xl font-semibold">
-          Partner&apos;s trust <span className="text-[#25CA0A]">Our pride</span>
+          Partner&apos;s Trust <span className="text-[#25CA0A]">Our pride</span>
         </h2>
         <div className="flex flex-row justify-center items-center gap-20">
           <img src="logo1.png" className="w-[16em]"></img>
           <img src="logo2.png" className="w-[12em]"></img>
           <img src="logo3.png" className="w-[12em]"></img>
           <img src="logo4.png" className="w-[12em]"></img>
+        </div>
+      </div>
+      <div className="pl-20 py-5 text-[#093A01]/95">
+        <h3 className="font-semibold text-2xl">Contact Us</h3>
+        <div className="relative">
+          <form
+            action="#"
+            onsubmit={(e) => {}}
+            className="gap-y-4 flex py-72 flex-col mt-10 relative md:w-1/2"
+          >
+            <label className="font-bold">Name</label>
+            <input
+              name="name"
+              placeholder="Victor Doe"
+              className="focus:outline-none border-b border-b-[#093A01] placeholder:text-black/50"
+            />
+            <label className="font-bold">Mobile Number</label>
+            <input
+              name="phone"
+              placeholder="+91-8309013346"
+              className="focus:outline-none border-b border-b-[#093A01] placeholder:text-black/50"
+            />
+            <label className="font-bold">Email</label>
+            <input
+              name="email"
+              type="email"
+              placeholder="temp@email.com"
+              className="focus:outline-none border-b border-b-[#093A01] placeholder:text-black/50"
+            />
+            <label className="font-bold">Message</label>
+            <textarea
+              name="message"
+              className="focus:outline-none border-b border-b-[#093A01] placeholder:text-black/50"
+            />
+            <button
+              type="submit"
+              className="bg-green-400 rounded-2xl w-fit px-8 py-3 text-white"
+            >
+              Submit
+            </button>
+          </form>
+          <div className="w-[55%] absolute top-0 right-0 h-full">
+            <img
+              src="/contactus.png"
+              className="object-contain w-full h-full"
+            />
+          </div>
         </div>
       </div>
     </main>
