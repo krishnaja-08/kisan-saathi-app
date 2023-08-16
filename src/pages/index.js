@@ -271,20 +271,20 @@ export default function Home() {
         </h2>
 
         <div className="grid grid-cols-3 gap-x-10 place-items-center">
-          <div className="font-medium">
+          <div className="">
             <img src="/person.png" className="pl-8 w-3/4" />
-            <h4 className="text-[#093A01]">Kylan Gentry</h4>
-            <p className="text-[#25CA0A]">CEO & Cofounder</p>
+            <h4 className="text-[#093A01] font-medium">Kylan Gentry</h4>
+            <p className="text-[#25CA0A] font-medium">CEO & Cofounder</p>
           </div>
-          <div className="font-medium">
+          <div className="">
             <img src="/person.png" className="pl-8 w-3/4" />
-            <h4 className="text-[#093A01]">Kylan Gentry</h4>
-            <p className="text-[#25CA0A]">CEO & Cofounder</p>
+            <h4 className="text-[#093A01] font-medium">Kylan Gentry</h4>
+            <p className="text-[#25CA0A] font-medium">CEO & Cofounder</p>
           </div>
-          <div className="font-medium">
+          <div className="">
             <img src="/person.png" className="pl-8 w-3/4" />
-            <h4 className="text-[#093A01]">Kylan Gentry</h4>
-            <p className="text-[#25CA0A]">CEO & Cofounder</p>
+            <h4 className="text-[#093A01] font-medium">Kylan Gentry</h4>
+            <p className="text-[#25CA0A] font-medium">CEO & Cofounder</p>
           </div>
         </div>
       </div>
