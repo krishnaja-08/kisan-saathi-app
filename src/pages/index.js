@@ -1,4 +1,4 @@
-import { Inter } from "next/font/google";
+import { Poppins } from "next/font/google";
 import {
   Navigation,
   Pagination,
@@ -12,24 +12,24 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/autoplay";
 
-const inter = Inter({ subsets: ["latin"] });
+const poppins = Poppins({ weight: ["400", "500", "600", "700", "800", "900"],subsets: ["latin"] });
 
 export default function Home() {
   return (
-    <main className={`${inter.className}`}>
+    <main className={`${poppins.className}`}>
       <div className="bg-landing bg-contain w-full h-full bg-no-repeat z-50">
-        <div className="flex py-[30%] text-4xl px-80 flex-col">
-          <h1>Empowering Indian Agriculture for a thriving tomorrow</h1>
-          <p>
-            The establishment of FPO&apos;s, promoting self-sustainability,
-            enhanced farm income and effective agricultural practices with
+        <div className="flex w-[60%] pt-[40%] pb-[25%] text-3xl pl-40 flex-col">
+          <h1 className="text-transparent bg-clip-text bg-gradient-to-r font-semibold from-[#FFFFFF]/70 to-[#BCF5B2]">Empowering Indian Agriculture <br></br>for a thriving tomorrow</h1><br></br>
+          <p className="text-[#FFFFFF]/70">
+            The establishment of FPO&apos;s, promoting self-sustainability,<br></br>
+            enhanced farm income and effective agricultural practices with<br></br>
             strengthened mark linkages
           </p>
-          <button>See more</button>
+          <button className="w-fit px-10 py-5 text-xl rounded-2xl bg-gradient-to-r from-[#DDFCA999] to-[#D2EFA31A] text-white font-bold">See more</button>
         </div>
       </div>
-      <div className="overflow-clip space-x-10 relative z-20">
-        <div className="flex w-2/5 pl-36 flex-col">
+      <div className="space-x-10 relative pt-[5%] pb-[20%] z-20">
+        <div className="flex w-2/3 pl-36 flex-col">
           <h2 className="text-4xl py-8 font-semibold text-[#093A01] ">
             Why <span className="text-[#25CA0A]">Kisan Saathi?</span>
           </h2>
@@ -44,7 +44,9 @@ export default function Home() {
             linkages{" "}
           </p>
         </div>
-        <img className="w-3/5 absolute -top-10 right-0" src="smart.jpeg" />
+        <div className="absolute w-3/5 -top-10 right-0 h-full">
+          <img className="w-full h-full object-contain" src="smart.png" />
+        </div>
       </div>
       <div className="flex flex-col items-center px-12 text-[#093A01] py-12 gap-8">
         <h2 className="text-4xl font-semibold">
@@ -140,21 +142,17 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <h2 className="flex text-center justify-center">
-        Insights Corner: Featured Articles
-      </h2>
-      <div className="px-32 space-x-4 relative">
+      <h2 className="text-4xl text-center pt-10 font-semibold">
+          Insight Corner{" "}
+          <span className="text-[#25CA0A]">Featured articles</span>
+        </h2>
+      <div className="px-40 space-x-4 relative">
         <button className="swiper-prev absolute left-10 top-1/2 bottom-1/2">
-          <img src="/leftbutton.png" className="h-12" />
+          <img src="/leftbutton.png" className="h-24" />
         </button>
         <Swiper
           modules={[Navigation, Pagination, Autoplay]}
-          spaceBetween={50}
-          slidesPerView={2}
-          navigation={{
-            nextEl: ".swiper-next",
-            prevEl: ".swiper-prev",
-          }}
+          spaceBetween={0}
           loop={true}
           autoplay={{
             delay: 1000,
@@ -166,92 +164,48 @@ export default function Home() {
           onSwiper={(swiper) => console.log(swiper)}
         >
           <SwiperSlide className="p-20">
-            <div className="text-white relative aspect-square flex flex-col bg-slide1 px-4 py-4 bg-no-repeat bg-cover rounded-3xl">
+            <div className="text-white pl-10 justify-center relative aspect-square flex flex-col bg-slide1 px-4 py-4 bg-no-repeat bg-cover rounded-[100px]">
               <div>
-                <p>Lorem ipsum dolor sit amet consectetur</p>
+                <p className="font-bold text-3xl">Lorem ipsum dolor sit amet consectetur</p>
                 <br></br>
                 <p>Lorem ipsum dolor sit amet consectetur</p>
+                <br />
               </div>
-              <button className="px-4 py-4 bg-grey text-left rounded-md">
+              <button className="px-8 py-4 bg-gray-300/70 backdrop-blur-md rounded-xl text-white font-bold w-fit">
                 Read more
               </button>
             </div>
           </SwiperSlide>
           <SwiperSlide className="p-20">
-            <div className="text-white relative aspect-square flex flex-col bg-slide1 px-4 py-4 bg-no-repeat bg-cover rounded-3xl">
+            <div className="text-white pl-10 justify-center relative aspect-square flex flex-col bg-slide1 px-4 py-4 bg-no-repeat bg-cover rounded-[100px]">
               <div>
-                <p>Lorem ipsum dolor sit amet consectetur</p>
+                <p className="font-bold text-3xl">Lorem ipsum dolor sit amet consectetur</p>
                 <br></br>
                 <p>Lorem ipsum dolor sit amet consectetur</p>
+                <br />
               </div>
-              <button className="px-4 py-4 bg-grey text-left rounded-md">
+              <button className="px-8 py-4 bg-gray-300/70 backdrop-blur-md rounded-xl text-white font-bold w-fit">
                 Read more
               </button>
             </div>
           </SwiperSlide>
           <SwiperSlide className="p-20">
-            <div className="text-white relative aspect-square flex flex-col bg-slide1 px-4 py-4 bg-no-repeat bg-cover rounded-3xl">
+            <div className="text-white pl-10 justify-center relative aspect-square flex flex-col bg-slide1 px-4 py-4 bg-no-repeat bg-cover rounded-[100px]">
               <div>
-                <p>Lorem ipsum dolor sit amet consectetur</p>
+                <p className="font-bold text-3xl">Lorem ipsum dolor sit amet consectetur</p>
                 <br></br>
                 <p>Lorem ipsum dolor sit amet consectetur</p>
+                <br />
               </div>
-              <button className="px-4 py-4 bg-grey text-left rounded-md">
+              <button className="px-8 py-4 bg-gray-300/70 backdrop-blur-md rounded-xl text-white font-bold w-fit">
                 Read more
               </button>
             </div>
           </SwiperSlide>
-          <SwiperSlide className="p-20">
-            <div className="text-white relative aspect-square flex flex-col bg-slide1 px-4 py-4 bg-no-repeat bg-cover rounded-3xl">
-              <div>
-                <p>Lorem ipsum dolor sit amet consectetur</p>
-                <br></br>
-                <p>Lorem ipsum dolor sit amet consectetur</p>
-              </div>
-              <button className="px-4 py-4 bg-grey text-left rounded-md">
-                Read more
-              </button>
-            </div>
-          </SwiperSlide>
-          <SwiperSlide className="p-20">
-            <div className="text-white relative aspect-square flex flex-col bg-slide1 px-4 py-4 bg-no-repeat bg-cover rounded-3xl">
-              <div>
-                <p>Lorem ipsum dolor sit amet consectetur</p>
-                <br></br>
-                <p>Lorem ipsum dolor sit amet consectetur</p>
-              </div>
-              <button className="px-4 py-4 bg-grey text-left rounded-md">
-                Read more
-              </button>
-            </div>
-          </SwiperSlide>
-          <SwiperSlide className="p-20">
-            <div className="text-white relative aspect-square flex flex-col bg-slide1 px-4 py-4 bg-no-repeat bg-cover rounded-3xl">
-              <div>
-                <p>Lorem ipsum dolor sit amet consectetur</p>
-                <br></br>
-                <p>Lorem ipsum dolor sit amet consectetur</p>
-              </div>
-              <button className="px-4 py-4 bg-grey text-left rounded-md">
-                Read more
-              </button>
-            </div>
-          </SwiperSlide>
-          <SwiperSlide className="p-20">
-            <div className="text-white relative aspect-square flex flex-col bg-slide1 px-4 py-4 bg-no-repeat bg-cover rounded-3xl">
-              <div>
-                <p>Lorem ipsum dolor sit amet consectetur</p>
-                <br></br>
-                <p>Lorem ipsum dolor sit amet consectetur</p>
-              </div>
-              <button className="px-4 py-4 bg-grey text-left rounded-md">
-                Read more
-              </button>
-            </div>
-          </SwiperSlide>
+          
         </Swiper>
         <button className="swiper-next absolute right-10 top-1/2 bottom-1/2">
-          <img src="/leftbutton.png" className="h-12 rotate-180" />
+          <img src="/leftbutton.png" className="h-24 rotate-180" />
         </button>
       </div>
       <div className="flex flex-col items-center py-12 gap-12">
@@ -289,11 +243,11 @@ export default function Home() {
         </div>
       </div>
       <div className="pl-20 py-5 text-[#093A01]/95">
-        <div className="relative py-72">
+        <div className="relative py-96">
           <h3 className="font-semibold text-2xl">Contact Us</h3>
           <form
             action="#"
-            onsubmit={(e) => {}}
+            onsubmit={(e) => { }}
             className="gap-y-4 flex  flex-col mt-10 relative md:w-1/2"
           >
             <label className="font-bold">Name</label>
@@ -335,6 +289,49 @@ export default function Home() {
           </div>
         </div>
       </div>
+      <div className=" bg-[#052100E5]" >
+      <div className="flex justify-center px-10 pt-20 pb-8 text-white flex-row gap-48">
+        <div className="flex flex-col gap-8 pb-10">
+          <p className="font-semibold pb-4">kisan saathi</p>
+          <p>Lorem ipsum dolor <br></br>sit amet consectetur</p>
+        </div>
+        <div className="flex flex-col gap-8">
+          <p className="font-semibold">Our Company</p>
+          <p>About us</p>
+          <p>Contact</p>
+          <p>Join our team</p>
+          <p>Privacy policy</p>
+        </div>
+        <div className="flex flex-col gap-8">
+          <div className="font-semibold">Get in touch</div>
+          <div className="flex flex-row gap-12 pb-2">
+            <img src="twitter.png" className="w-[1.5em]"></img>
+            <img src="linkedin.png" className="w-[1.5em]"></img>
+            <img src="insta.png" className="w-[1.5em]"></img>
+            <img src="fb.png" className="w-[1.5em]"></img>
+          </div>
+          <div className="flex flex-row items-center gap-8">
+            <img src="time.png" className="w-[1em]"></img>
+            <div className="flex flex-col gap-4">
+              <p>Weekdays 10 am - 6 pm</p>
+              <p>Weekends 10 am - 3pm</p>
+            </div>
+          </div>
+          <div className="flex flex-row gap-8">
+            <img src="phone.png" className="w-[1em]"></img>
+            <p  className="underline">+91 - 8475651452</p>
+          </div>
+          <div className="flex flex-row gap-8">
+            <img src="mail.png" className="w-[1em]"></img>
+            <p className="underline">support@kisansaathi.com</p>
+          </div>
+
+        </div>
+        
+      </div>
+      <p className="text-white px-8 py-8">Copyright 2023 | All Rights Reserved</p>
+      </div>
+
     </main>
   );
 }
