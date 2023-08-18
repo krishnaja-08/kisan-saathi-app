@@ -21,7 +21,7 @@ export default function Home() {
   return (
     <main className={`${poppins.className}`}>
       <div className="bg-landing bg-contain w-full h-full bg-no-repeat z-50">
-        <div className="flex w-full md:w-[50%] text-center md:text-start  pt-[20%] md:pt-[36%] md:pb-[20%] md:py-0 md:px-0 py-20 text-xl md:text-3xl px-10 md:pl-40 flex-col">
+        <div className="flex w-full md:w-[50%] text-center md:text-start  pt-[20%] md:pt-[40%] md:pb-[20%] md:py-0 md:px-0 py-20 text-xl md:text-3xl px-10 md:pl-40 flex-col">
           <h1 className="text-transparent bg-clip-text bg-gradient-to-r font-semibold from-[#FFFFFF]/70 to-[#BCF5B2]">
             Strengthening<br></br>FPO&apos;s
           </h1>
@@ -70,8 +70,9 @@ export default function Home() {
         Our <span className="text-[#25CA0A]"> services</span>
       </h2>
       <div className="flex flex-col justify-center text-[#093A01] font-semibold gap-8 px-20">
-        <div className="flex items-center md:flex-row flex-wrap gap-4 md:gap-20">
+        <div className="flex items-center md:flex-row gap-4 md:gap-20">
           <p>Input</p>
+          <div className="grid grid-cols-2 md:flex md:flex-row"></div>
           <div className="flex flex-col">
             <div className="flex flex-row items-center justify-center">
               <img src="input.png" className="aspect-square h-[12em]"></img>
@@ -83,65 +84,70 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="flex items-center md:flex-row flex-wrap gap-4 md:gap-20">
+        <div className="flex items-center flex-row flex-wrap gap-4 md:gap-20">
           <p>Output</p>
-          <div className="flex flex-col items-center justify-center">
-            <img src="market.png" className="w-[12em]"></img>
-            <p>Market Linkage</p>
-          </div>
-          <div className="flex flex-col items-center justify-center">
-            <img src="access.png" className="w-[12em]"></img>
-            <p>Weekly Harvsting </p>
-            <p>Index</p>
-          </div>
+          <div className="grid grid-cols-2 md:flex md:flex-row">
+            <div className="flex flex-col items-center justify-center">
+              <img src="market.png" className="w-[12em]"></img>
+              <p>Market Linkage</p>
+            </div>
+            <div className="flex flex-col items-center justify-center">
+              <img src="access.png" className="w-[12em]"></img>
+              <p>Weekly Harvsting </p>
+              <p>Index</p>
+            </div>
 
-          <div className="flex flex-col items-center justify-center">
-            <img src="access.png" className="w-[12em]"></img>
-            <p>Sorting &amp; Grading </p>
-            <p>Training</p>
-          </div>
-          <div className="flex flex-col items-center">
-            <img src="market.png" className="w-[12em]"></img>
-            <p>Customized </p>
-            <p>Marketing </p>
-            <p>Strategies</p>
+            <div className="flex flex-col items-center justify-center">
+              <img src="access.png" className="w-[12em]"></img>
+              <p>Sorting &amp; Grading </p>
+              <p>Training</p>
+            </div>
+            <div className="flex flex-col items-center">
+              <img src="market.png" className="w-[12em]"></img>
+              <p>Customized </p>
+              <p>Marketing </p>
+              <p>Strategies</p>
+            </div>
           </div>
         </div>
-        <div className="flex items-center md:flex-row flex-wrap gap-4 md:gap-20">
+        <div className="flex items-center flex-row flex-wrap gap-4 md:gap-20">
           <p>Consultancy</p>
-          <div className="flex flex-col items-center ">
-            <img src="access.png" className="w-[12em]"></img>
-            <p>Access to</p>
-            <p> kisanSaathiApp</p>
+          <div className="grid grid-cols-2 md:flex md:flex-row">
+            <div className="flex flex-col items-center ">
+              <img src="access.png" className="w-[12em]"></img>
+              <p>Access to</p>
+              <p> kisanSaathiApp</p>
+            </div>
+            <div className="flex flex-col items-center justify-center">
+              <img src="tech.png" className="w-[12em]"></img>
+              <p>
+                Technology<br></br>(Extension<br></br> Services)
+              </p>
+            </div>
+            <div className="flex flex-col items-center justify-center">
+              <img src="access.png" className="w-[12em]"></img>
+              <p>Service Providers</p>
+              <p> Connect</p>
+            </div>
+            <div className="flex flex-col items-center justify-center">
+              <img src="access.png" className="w-[12em]"></img>
+              <p>FPO Wise</p>
+              <p> Commodity Value</p>
+              <p> Chain Creation</p>
+            </div>
+            <div className="items-center justify-center flex flex-col">
+              <img src="access.png" className="w-[12em]"></img>
+              <p>Strengthening</p>
+              <p>FPOs Business </p>
+              <p>Verticles</p>
+            </div>
+            <div className="flex flex-col items-center justify-center">
+              <img src="swot.png" className="w-[12em]"></img>
+              <p>FPO SWOT </p>
+              <p>Analysis</p>
+            </div>
           </div>
-          <div className="flex flex-col items-center justify-center">
-            <img src="tech.png" className="w-[12em]"></img>
-            <p>
-              Technology<br></br>(Extension<br></br> Services)
-            </p>
-          </div>
-          <div className="flex flex-col items-center justify-center">
-            <img src="access.png" className="w-[12em]"></img>
-            <p>Service Providers</p>
-            <p> Connect</p>
-          </div>
-          <div className="flex flex-col items-center justify-center">
-            <img src="access.png" className="w-[12em]"></img>
-            <p>FPO Wise</p>
-            <p> Commodity Value</p>
-            <p> Chain Creation</p>
-          </div>
-          <div className="items-center justify-center flex flex-col">
-            <img src="access.png" className="w-[12em]"></img>
-            <p>Strengthening</p>
-            <p>FPOs Business </p>
-            <p>Verticles</p>
-          </div>
-          <div className="flex flex-col items-center justify-center">
-            <img src="swot.png" className="w-[12em]"></img>
-            <p>FPO SWOT </p>
-            <p>Analysis</p>
-          </div>
+
         </div>
       </div>
       <h2 className="text-2xl md:text-4xl text-center pb-8 pt-10 font-semibold">
@@ -461,10 +467,12 @@ export default function Home() {
             </div>
           </div>
         </div>
+        <p className="text-white md:block text-center md:text-start px-8 py-8">
+          Copyright 2023 | All Rights Reserved
+        </p>
       </div>
-      <p className="text-white md:block text-center px-8 py-8">
-        Copyright 2023 | All Rights Reserved
-      </p>
+
+
     </main>
   );
 }
