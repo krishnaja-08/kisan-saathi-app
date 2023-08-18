@@ -27,7 +27,7 @@ export default function Home() {
           <button className="w-fit px-10 py-5 text-xl rounded-2xl bg-gradient-to-r from-[#DDFCA999] to-[#D2EFA31A] text-white font-bold">See more</button>
         </div>
       </div>
-      <div className="space-x-10 relative pt-[5%] pb-[20%] z-20">
+      <div className="flex flex-col-reverse space-x-10 relative pt-[5%] pl-8 md:pl-0 pb-[20%] z-20">
         <div className="flex w-2/3 pl-36 flex-col">
           <h2 className="text-4xl py-8 font-semibold text-[#093A01] ">
             Why <span className="text-[#25CA0A]">Kisan Saathi?</span>
@@ -43,7 +43,7 @@ export default function Home() {
             linkages{" "}
           </p>
         </div>
-        <div className="absolute w-3/5 -top-10 right-0 h-full">
+        <div className="md:absolute w-3/5 -top-10 right-0 h-full">
           <img className="w-full h-full object-contain" src="smart.png" />
         </div>
       </div>
@@ -224,14 +224,14 @@ export default function Home() {
         <h2 className="text-4xl font-semibold">
           Partner&apos;s Trust <span className="text-[#25CA0A]">Our pride</span>
         </h2>
-        <div className="flex flex-row justify-center items-center gap-20">
+        <div className="flex flex-wrap md:flex-row justify-center items-center gap-8 md:gap-20">
           <img src="atal.png" className="w-[16em]"></img>
           <img src="garuda.jpeg" className="w-[12em]"></img>
           <img src="giz.png" className="w-[16em]"></img>
           <img src="go.png" className="w-[12em]"></img>
           <img src="Cell.jpg" className="w-[12em]"></img>
         </div>
-        <div className="flex flex-row justify-center items-center gap-28">
+        <div className="flex flex-wrap md:flex-row justify-center items-center gap-8 md:gap-20">
           <img src="hyd.jpg" className="w-[12em] h-12"></img>
           <img src="svm.png" className="w-[12em]"></img>
           <img src="alpha.png" className="w-[12em]"></img>
@@ -244,7 +244,7 @@ export default function Home() {
           Meet <span className="text-[#25CA0A]">Our Team</span>
         </h2>
 
-        <div className="grid grid-cols-3 gap-x-10 place-items-center">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-x-10 place-items-center">
           <div className="">
             <img src="/person.png" className="pl-8 w-3/4" />
             <h4 className="text-[#093A01] font-medium">Kylan Gentry</h4>

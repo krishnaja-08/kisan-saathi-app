@@ -15,10 +15,10 @@ export default function Navbar() {
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
   return (
-    <div className="flex flex-col fixed top-0 w-full left-0 z-50 px-12 py-8">
+    <div className="flex flex-col fixed top-0 w-full left-0 z-50 ">
       <div
         ref={navRef}
-        className="flex flex-row justify-between  transition-colors duration-300 ease-in-out"
+        className="flex flex-row px-12 py-8 justify-between  transition-colors duration-300 ease-in-out"
       >
         <img src="logo.png" className="h-[4em] px-8"></img>
         <div className="md:flex hidden text-right flex-row gap-8 text-[#093A01] font-semibold">
