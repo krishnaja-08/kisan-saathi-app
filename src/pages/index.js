@@ -297,64 +297,62 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="px-40">
-        <h2 className="text-2xl md:text-4xl font-semibold text-center pb-4">
-          Meet <span className="text-[#25CA0A]">Our Team</span>
-        </h2>
-        <div className="relative px-8 md:px-40">
-          <button className="team-prev absolute left-0 md:left-10 top-1/2 bottom-1/2">
-            <img src="/arrow-left.png" className="h-10 md:h-24 rotate-180" />
-          </button>
-          <button className="team-next absolute right-0 md:right-10 top-1/2 bottom-1/2">
-            <img src="/arrow-left.png" className="h-10 md:h-24" />
-          </button>
-          <Swiper
-            modules={[Navigation, Pagination, Autoplay]}
-            breakpoints={{
-              0: {
-                slidesPerView: 1,
-                spaceBetween: 20,
-                centeredSlides: true,
-                loop: true,
-              },
-              768: {
-                slidesPerView: 3,
-                centeredSlides: false,
-                spaceBetween: 100,
-                loop: false,
-                autoplay: false,
-              },
-            }}
-            autoplay={{
-              delay: 1000,
-              disableOnInteraction: true,
-            }}
-            speed={1500}
-            className=""
-            navigation={{
-              nextEl: ".team-next",
-              prevEl: ".team-prev",
-            }}
-            pagination={{ clickable: true }}
-            onSwiper={(swiper) => console.log(swiper)}
-          >
-            <SwiperSlide className="">
-              <img src="/person.png" className="pl-8" />
-              <h4 className="text-[#093A01] font-medium">Kylan Gentry</h4>
-              <p className="text-[#25CA0A] font-medium">CEO & Cofounder</p>
-            </SwiperSlide>
-            <SwiperSlide className="">
-              <img src="/person.png" className="pl-8" />
-              <h4 className="text-[#093A01] font-medium">Kylan Gentry</h4>
-              <p className="text-[#25CA0A] font-medium">CEO & Cofounder</p>
-            </SwiperSlide>
-            <SwiperSlide className="">
-              <img src="/person.png" className="pl-8" />
-              <h4 className="text-[#093A01] font-medium">Kylan Gentry</h4>
-              <p className="text-[#25CA0A] font-medium">CEO & Cofounder</p>
-            </SwiperSlide>
-          </Swiper>
-        </div>
+      <h2 className="text-2xl md:text-4xl font-semibold text-center pb-4">
+        Meet <span className="text-[#25CA0A]">Our Team</span>
+      </h2>
+      <div className="relative px-8 md:px-40">
+        <button className="team-prev absolute left-0 md:left-10 top-1/2 bottom-1/2">
+          <img src="/arrow-left.png" className="h-10 md:h-24 rotate-180" />
+        </button>
+        <button className="team-next absolute right-0 md:right-10 top-1/2 bottom-1/2">
+          <img src="/arrow-left.png" className="h-10 md:h-24" />
+        </button>
+        <Swiper
+          modules={[Navigation, Pagination, Autoplay]}
+          breakpoints={{
+            0: {
+              slidesPerView: 1,
+              spaceBetween: 20,
+              centeredSlides: true,
+              loop: true,
+            },
+            768: {
+              slidesPerView: 3,
+              centeredSlides: false,
+              spaceBetween: 100,
+              loop: false,
+              autoplay: false,
+            },
+          }}
+          autoplay={{
+            delay: 1000,
+            disableOnInteraction: true,
+          }}
+          speed={1500}
+          className=""
+          navigation={{
+            nextEl: ".team-next",
+            prevEl: ".team-prev",
+          }}
+          pagination={{ clickable: true }}
+          onSwiper={(swiper) => console.log(swiper)}
+        >
+          <SwiperSlide className="">
+            <img src="/person.png" className="pl-8" />
+            <h4 className="text-[#093A01] font-medium">Kylan Gentry</h4>
+            <p className="text-[#25CA0A] font-medium">CEO & Cofounder</p>
+          </SwiperSlide>
+          <SwiperSlide className="">
+            <img src="/person.png" className="pl-8" />
+            <h4 className="text-[#093A01] font-medium">Kylan Gentry</h4>
+            <p className="text-[#25CA0A] font-medium">CEO & Cofounder</p>
+          </SwiperSlide>
+          <SwiperSlide className="">
+            <img src="/person.png" className="pl-8" />
+            <h4 className="text-[#093A01] font-medium">Kylan Gentry</h4>
+            <p className="text-[#25CA0A] font-medium">CEO & Cofounder</p>
+          </SwiperSlide>
+        </Swiper>
       </div>
       <div className="md:pl-20 px-8 py-5 text-[#093A01]/95">
         <div className="relative py-60">
