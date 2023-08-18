@@ -70,17 +70,16 @@ export default function Home() {
         Our <span className="text-[#25CA0A]"> services</span>
       </h2>
       <div className="flex flex-col justify-center text-[#093A01] font-semibold gap-8 px-20">
-        <div className="flex items-center md:flex-row gap-4 md:gap-20">
+        <div className="flex items-center flex-wrap flex-row gap-4 md:gap-20">
           <p>Input</p>
-          <div className="grid grid-cols-2 md:flex md:flex-row"></div>
-          <div className="flex flex-col">
-            <div className="flex flex-row items-center justify-center">
-              <img src="input.png" className="aspect-square h-[12em]"></img>
-              <img src="access.png" className="h-[12em] aspect-square"></img>
+          <div className="grid grid-cols-2 gap-x-4 md:flex md:flex-row">
+            <div className="flex flex-col items-center justify-center">
+              <img src="input.png" className="aspect-square w-[12em]"></img>
+              <p className="text-center">InputConnect</p>
             </div>
-            <div className="flex flex-row text-center">
-              <p className="w-[12em] text-center">InputConnect</p>
-              <p className="w-[12em] text-center">Requirement Chart</p>
+            <div className="flex flex-col items-center justify-center">
+              <img src="access.png" className="w-[12em] aspect-square"></img>
+              <p className="text-center">Requirement Chart</p>
             </div>
           </div>
         </div>
