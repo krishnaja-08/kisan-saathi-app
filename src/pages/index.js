@@ -18,7 +18,7 @@ export default function Home() {
   return (
     <main className={`${poppins.className}`}>
       <div className="bg-landing bg-contain w-full h-full bg-no-repeat z-50">
-        <div className="flex w-[50%] pt-[36%] pb-[20%] text-3xl pl-40 flex-col">
+        <div className="flex w-full md:w-[50%] pt-[60%] md:pt-[36%] pb-[20%] text-3xl pl-4 md:pl-40 flex-col">
           <h1 className="text-transparent bg-clip-text bg-gradient-to-r font-semibold from-[#FFFFFF]/70 to-[#BCF5B2]">Empowering Indian Agriculture <br></br>for a thriving tomorrow</h1><br></br>
           <p className="text-[#FFFFFF]/70">
           Strengthening FPO’s,  Strengthening Agriculture through Economics of aggregation by Uniting the farms and  farmers through FPO’s
@@ -59,7 +59,7 @@ export default function Home() {
         </h2>
       <div className="flex flex-col justify-center text-[#093A01] font-semibold gap-8 px-20">
   
-        <div className="flex items-center flex-row gap-20">
+        <div className="flex items-center md:flex-row flex-wrap gap-4 md:gap-20">
           <p >Input</p>
           
           <div className="flex flex-col items-center justify-center">
@@ -73,7 +73,7 @@ export default function Home() {
           
           
         </div>
-        <div className="flex items-center flex-row gap-20">
+        <div className="flex items-center md:flex-row flex-wrap gap-4 md:gap-20">
           <p>Output</p>
           <div className="flex flex-col items-center justify-center">
             <img src="market.png" className="w-[12em]"></img>
@@ -94,7 +94,7 @@ export default function Home() {
             <p>Customized </p><p>Marketing </p><p>Strategies</p>
           </div>        
         </div>
-        <div className="flex items-center flex-row gap-20">
+        <div className="flex items-center md:flex-row flex-wrap gap-4 md:gap-20">
           <p>Consultancy</p>
           <div className="flex flex-col items-center ">
             <img src="access.png" className="w-[12em]"></img>
