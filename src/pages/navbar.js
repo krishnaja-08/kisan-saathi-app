@@ -21,7 +21,7 @@ export default function Navbar() {
         className="flex flex-row justify-between  transition-colors duration-300 ease-in-out"
       >
         <img src="logo.png" className="h-[4em] px-8"></img>
-        <div className="md:flex hidden flex-row gap-8 text-[#093A01] font-semibold">
+        <div className="md:flex hidden text-right flex-row gap-8 text-[#093A01] font-semibold">
           <p>Home</p>
           <p>About us</p>
           <p>Service</p>
@@ -46,7 +46,7 @@ export default function Navbar() {
       <div
         className={`${
           val === true ? "flex" : "hidden"
-        } md:hidden flex-col gap-8 text-[#093A01] font-semibold`}
+        } md:hidden text-end flex-col gap-8 text-[#093A01] font-semibold`}
       >
         <p>Home</p>
         <p>About us</p>
