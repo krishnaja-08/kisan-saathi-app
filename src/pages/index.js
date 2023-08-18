@@ -35,7 +35,8 @@ export default function Home() {
           <div className="text-center md:text-start">
             <button className="w-fit px-10 py-5 text-xl rounded-2xl bg-gradient-to-r from-[#DDFCA999] to-[#D2EFA31A] text-white font-bold">
               See more
-            </button></div>
+            </button>
+          </div>
         </div>
       </div>
       <div className="flex flex-col-reverse space-x-10 relative pt-[5%] px-8 md:px-0 md:pl-0 pb-[20%] z-20">
@@ -48,10 +49,9 @@ export default function Home() {
             <br></br>
             sustainability and better farm income realisation of <br></br>
             farmers, FPO&apos;s through effective capacity building , FPO{" "}
-            Management, collectivisation approach, agronomy ,{" "}
-            cutlivating practices, transfer of technology, improved post{" "}
-            harvest management and efficient front end market
-            linkages{" "}
+            Management, collectivisation approach, agronomy , cutlivating
+            practices, transfer of technology, improved post harvest management
+            and efficient front end market linkages{" "}
           </p>
         </div>
         <div className="md:absolute md:w-3/5 -top-10 right-0 h-full">
@@ -147,11 +147,11 @@ export default function Home() {
               <p>Analysis</p>
             </div>
           </div>
-
         </div>
       </div>
       <h2 className="text-2xl md:text-4xl text-center pb-8 pt-10 font-semibold">
-        Insight Corner : <span className="text-[#25CA0A]">Featured articles</span>
+        Insight Corner :{" "}
+        <span className="text-[#25CA0A]">Featured articles</span>
       </h2>
       <div className="px-10 md:px-40 relative">
         <button className="swiper-prev absolute left-0 md:left-10 top-1/2 bottom-1/2">
@@ -192,8 +192,8 @@ export default function Home() {
                 <p className="font-bold text-3xl">Forbes magazine, 2019</p>
                 <br></br>
                 <p>
-                  The 'Farmer's Companion' Bringing Together Food Buyers And
-                  Producers In Urban India
+                  The &quot;Farmer&quot;s Companion&quot; Bringing Together Food
+                  Buyers And Producers In Urban India
                 </p>
                 <br />
               </div>
@@ -370,7 +370,7 @@ export default function Home() {
           <h3 className="font-semibold text-3xl md:text-2xl">Contact Us</h3>
           <form
             action="#"
-            onSubmit={(e) => { }}
+            onSubmit={(e) => {}}
             className="gap-y-4 flex  flex-col mt-10 relative md:w-1/2"
           >
             <label className="font-bold">Name</label>
@@ -403,7 +403,8 @@ export default function Home() {
                 className="bg-green-400 rounded-2xl w-fit px-8 py-3 text-white"
               >
                 Submit
-              </button></div>
+              </button>
+            </div>
           </form>
           <div className="w-[55%] hidden md:block pt-20 absolute top-0 right-0 h-full">
             <img
@@ -471,8 +472,6 @@ export default function Home() {
           Copyright 2023 | All Rights Reserved
         </p>
       </div>
-
-
     </main>
   );
 }
