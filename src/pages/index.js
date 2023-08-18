@@ -21,11 +21,8 @@ export default function Home() {
   return (
     <main className={`${poppins.className}`}>
       <div className="bg-landing bg-contain w-full h-full bg-no-repeat z-50">
-        <div className="flex w-full md:w-[50%] pt-[60%] md:pt-[36%] pb-[20%] text-3xl pl-4 md:pl-40 flex-col">
-          <h1 className="text-transparent bg-clip-text bg-gradient-to-r font-semibold from-[#FFFFFF]/70 to-[#BCF5B2]">
-            Empowering Indian Agriculture <br></br>for a thriving tomorrow
-          </h1>
-          <br></br>
+        <div className="flex w-full md:w-[50%] pt-[20%] md:pt-[36%] md:pb-[20%] md:py-0 md:px-0 py-20 text-xl md:text-3xl px-10 md:pl-40 flex-col">
+          <h1 className="text-transparent bg-clip-text bg-gradient-to-r font-semibold from-[#FFFFFF]/70 to-[#BCF5B2]">Strengthening<br></br>FPO's</h1><br></br>
           <p className="text-[#FFFFFF]/70">
             Strengthening FPO’s, Strengthening Agriculture through Economics of
             aggregation by Uniting the farms and farmers through FPO’s
@@ -36,10 +33,10 @@ export default function Home() {
           </button>
         </div>
       </div>
-      <div className="flex flex-col-reverse space-x-10 relative pt-[5%] pl-8 md:pl-0 pb-[20%] z-20">
-        <div className="flex w-2/3 pl-36 flex-col">
-          <h2 className="text-4xl py-8 font-semibold text-[#093A01] ">
-            Why <span className="text-[#25CA0A]">Kisan Saathi?</span>
+      <div className="flex flex-col-reverse space-x-10 relative pt-[5%] px-8 md:px-0 md:pl-0 pb-[20%] z-20">
+        <div className="flex md:w-2/3 px-8 md:px-0 md:pl-36 flex-col">
+          <h2 className="text-2xl md:text-4xl py-8 font-semibold text-[#093A01] ">
+            About <span className="text-[#25CA0A]">Us</span>
           </h2>
           <p className="text-xl">
             An initiative to build FPO&apos;s of India - creating self<br></br>
@@ -52,20 +49,21 @@ export default function Home() {
             linkages{" "}
           </p>
         </div>
-        <div className="md:absolute w-3/5 -top-10 right-0 h-full">
+        <div className="md:absolute md:w-3/5 -top-10 right-0 h-full">
           <img className="w-full h-full object-contain" src="smart.png" />
         </div>
       </div>
       <div className="flex flex-col items-center text-[#093A01] py-2 gap-8">
-        <h2 className="text-4xl font-semibold">
+        <h2 className="text-2xl md:text-4xl font-semibold">
           Addressing Challenges of{" "}
           <span className="text-[#25CA0A]">Agriculture</span>
         </h2>
-        <img src="challenges.png" className="h-[60%]"></img>
+        <img src="challenges.png" className="hidden md:block h-[60%]"></img>
+        <img src="android.png" className="md:hidden"></img>
       </div>
-      <h2 className="text-4xl flex gap-2  justify-center font-semibold">
-        Our <span className="text-[#25CA0A]"> services</span>
-      </h2>
+      <h2 className="text-2xl md:text-4xl flex gap-2 py-10 justify-center font-semibold">
+          Our  <span className="text-[#25CA0A]"> services</span>
+        </h2>
       <div className="flex flex-col justify-center text-[#093A01] font-semibold gap-8 px-20">
         <div className="flex items-center md:flex-row flex-wrap gap-4 md:gap-20">
           <p>Input</p>
@@ -140,9 +138,10 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <h2 className="text-4xl text-center pt-10 font-semibold">
-        Insight Corner <span className="text-[#25CA0A]">Featured articles</span>
-      </h2>
+      <h2 className="text-2xl md:text-4xl text-center pt-10 font-semibold">
+          Insight Corner{" "}
+          <span className="text-[#25CA0A]">Featured articles</span>
+        </h2>
       <div className="px-10 md:px-40 relative">
         <button className="swiper-prev absolute left-0 md:left-10 top-1/2 bottom-1/2">
           <img src="/leftbutton.png" className="h-10 md:h-24" />
@@ -276,26 +275,28 @@ export default function Home() {
         </button>
       </div>
       <div className="flex flex-col items-center py-12 gap-12">
-        <h2 className="text-4xl font-semibold">
+        <h2 className="text-2xl md:text-4xl font-semibold">
           Partner&apos;s Trust <span className="text-[#25CA0A]">Our pride</span>
         </h2>
-        <div className="flex flex-wrap md:flex-row justify-center items-center gap-8 md:gap-20">
+        <div className="flex flex-row gap-8 md:block">
+        <div className="flex flex-col md:flex-row justify-center items-center gap-8 md:gap-20">
           <img src="atal.png" className="w-[16em]"></img>
           <img src="garuda.jpeg" className="w-[12em]"></img>
           <img src="giz.png" className="w-[16em]"></img>
           <img src="go.png" className="w-[12em]"></img>
           <img src="Cell.jpg" className="w-[12em]"></img>
         </div>
-        <div className="flex flex-wrap md:flex-row justify-center items-center gap-8 md:gap-20">
+        <div className="flex flex-col md:flex-row justify-center items-center gap-16 md:gap-28">
           <img src="hyd.jpg" className="w-[12em] h-12"></img>
           <img src="svm.png" className="w-[12em]"></img>
           <img src="alpha.png" className="w-[12em]"></img>
           <img src="vision.png" className="w-[12em]"></img>
           <img src="waycool.jpg" className="w-[8em]"></img>
         </div>
+        </div>
       </div>
-      <div className="">
-        <h2 className="text-4xl font-semibold text-center pb-4">
+      <div className="px-40">
+        <h2 className="text-2xl md:text-4xl font-semibold text-center pb-4">
           Meet <span className="text-[#25CA0A]">Our Team</span>
         </h2>
         <div className="relative px-8 md:px-40">
@@ -353,9 +354,9 @@ export default function Home() {
           </Swiper>
         </div>
       </div>
-      <div className="pl-20 py-5 text-[#093A01]/95">
+      <div className="md:pl-20 px-8 py-5 text-[#093A01]/95">
         <div className="relative py-60">
-          <h3 className="font-semibold text-2xl">Contact Us</h3>
+          <h3 className="font-semibold text-3xl md:text-2xl">Contact Us</h3>
           <form
             action="#"
             onSubmit={(e) => {}}
@@ -392,7 +393,7 @@ export default function Home() {
               Submit
             </button>
           </form>
-          <div className="w-[55%] pt-20 absolute top-0 right-0 h-full">
+          <div className="w-[55%] hidden md:block pt-20 absolute top-0 right-0 h-full">
             <img
               src="/contactus.png"
               className="object-contain w-full h-full"
@@ -400,43 +401,27 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className=" bg-[#052100E5]">
-        <div className="flex justify-center px-10 pt-10 pb-8 text-white flex-row gap-48">
-          <div className="flex flex-col gap-8 pb-10">
-            <p className="font-semibold pb-4">kisan saathi</p>
-            <p>
-              Lorem ipsum dolor <br></br>sit amet consectetur
-            </p>
+      <div className=" bg-[#052100E5]" >
+      <div className="flex justify-center md:px-10 px-4 pt-10 pb-8 text-white flex-wrap md:flex-row gap-10 md:gap-48">
+        <div className="flex flex-col gap-8 pb-10">
+          <p className="font-semibold pb-4">kisan saathi</p>
+          <p>Lorem ipsum dolor <br></br>sit amet consectetur</p>
+        </div>
+        <div className="flex flex-col gap-8">
+          <p className="font-semibold">Our Company</p>
+          <p>About us</p>
+          <p>Contact</p>
+          <p>Join our team</p>
+          <p>Privacy policy</p>
+        </div>
+        <div className="flex flex-col gap-8">
+          <div className="font-semibold">Get in touch</div>
+          <div className="flex flex-row gap-12 pb-2">
+            <a href="https://twitter.com/KisanSaathi" target="_blank"><img src="twitter.png" className="w-[1.5em]"></img></a>
+            <a href="https://www.linkedin.com/company/kisansaathi/" target="_blank"><img src="linkedin.png" className="w-[1.5em]"></img></a>
+            <a href="https://instagram.com/kisan.saathi?igshid=NGExMmI2YTkyZg==" target="_blank"><img src="insta.png" className="w-[1.5em]"></img></a>
+            <a href="https://www.facebook.com/KisanSaathi" target="_blank"><img src="fb.png" className="w-[1.5em]"></img></a>
           </div>
-          <div className="flex flex-col gap-8">
-            <p className="font-semibold">Our Company</p>
-            <p>About us</p>
-            <p>Contact</p>
-            <p>Join our team</p>
-            <p>Privacy policy</p>
-          </div>
-          <div className="flex flex-col gap-8">
-            <div className="font-semibold">Get in touch</div>
-            <div className="flex flex-row gap-12 pb-2">
-              <a href="https://twitter.com/KisanSaathi" target="_blank">
-                <img src="twitter.png" className="w-[1.5em]"></img>
-              </a>
-              <a
-                href="https://www.linkedin.com/company/kisansaathi/"
-                target="_blank"
-              >
-                <img src="linkedin.png" className="w-[1.5em]"></img>
-              </a>
-              <a
-                href="https://instagram.com/kisan.saathi?igshid=NGExMmI2YTkyZg=="
-                target="_blank"
-              >
-                <img src="insta.png" className="w-[1.5em]"></img>
-              </a>
-              <a href="https://www.facebook.com/KisanSaathi" target="_blank">
-                <img src="fb.png" className="w-[1.5em]"></img>
-              </a>
-            </div>
             <div className="flex flex-row items-center gap-8">
               <img src="time.png" className="w-[1em]"></img>
               <div className="flex flex-col gap-4">
@@ -454,9 +439,8 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <p className="text-white px-8 py-8">
-          Copyright 2023 | All Rights Reserved
-        </p>
+      </div>
+      <p className="text-white md:block text-center px-8 py-8">Copyright 2023 | All Rights Reserved</p>
       </div>
     </main>
   );
