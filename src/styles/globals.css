@@ -1,3 +1,6 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+.swiper-pagination {
+  bottom: 0;
+}
