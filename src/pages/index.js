@@ -23,12 +23,13 @@ export default function Home() {
       <div className="bg-landing bg-contain w-full h-full bg-no-repeat z-50">
         <div className="flex w-full md:w-[50%] pt-[20%] md:pt-[36%] md:pb-[20%] md:py-0 md:px-0 py-20 text-xl md:text-3xl px-10 md:pl-40 flex-col">
           <h1 className="text-transparent bg-clip-text bg-gradient-to-r font-semibold from-[#FFFFFF]/70 to-[#BCF5B2]">
-            Strengthening<br></br>FPO's
+            Strengthening<br></br>FPO&apos;s
           </h1>
           <br></br>
           <p className="text-[#FFFFFF]/70">
-            Strengthening FPO’s, Strengthening Agriculture through Economics of
-            aggregation by Uniting the farms and farmers through FPO’s
+            Strengthening FPO&quot;s, Strengthening Agriculture through
+            Economics of aggregation by Uniting the farms and farmers through
+            FPO’s
           </p>
           <br></br>
           <button className="w-fit px-10 py-5 text-xl rounded-2xl bg-gradient-to-r from-[#DDFCA999] to-[#D2EFA31A] text-white font-bold">
@@ -42,7 +43,8 @@ export default function Home() {
             About <span className="text-[#25CA0A]">Us</span>
           </h2>
           <p className="text-xl">
-            An initiative to build FPO&apos;s of India - creating self<br></br>
+            An initiative to build FPO&apos;s of India - creating self
+            <br></br>
             sustainability and better farm income realisation of <br></br>
             farmers, FPO&apos;s through effective capacity building , FPO{" "}
             <br></br>
@@ -70,14 +72,15 @@ export default function Home() {
       <div className="flex flex-col justify-center text-[#093A01] font-semibold gap-8 px-20">
         <div className="flex items-center md:flex-row flex-wrap gap-4 md:gap-20">
           <p>Input</p>
-
-          <div className="flex flex-col items-center justify-center">
-            <img src="input.png" className="w-[12em]"></img>
-            <p>InputConnect</p>
-          </div>
-          <div className="flex flex-col items-center justify-center">
-            <img src="access.png" className="w-[12em]"></img>
-            <p>Requirement Chart</p>
+          <div className="flex flex-col">
+            <div className="flex flex-row items-center justify-center">
+              <img src="input.png" className="aspect-square h-[12em]"></img>
+              <img src="access.png" className="h-[12em] aspect-square"></img>
+            </div>
+            <div className="flex flex-row text-center">
+              <p className="w-[12em] text-center">InputConnect</p>
+              <p className="w-[12em] text-center">Requirement Chart</p>
+            </div>
           </div>
         </div>
         <div className="flex items-center md:flex-row flex-wrap gap-4 md:gap-20">
@@ -168,6 +171,7 @@ export default function Home() {
             disableOnInteraction: true,
           }}
           speed={1500}
+          wrapperClass="py-10"
           className=""
           navigation={{
             nextEl: ".swiper-next",
@@ -300,12 +304,12 @@ export default function Home() {
       <h2 className="text-2xl md:text-4xl font-semibold text-center pb-4">
         Meet <span className="text-[#25CA0A]">Our Team</span>
       </h2>
-      <div className="relative px-8 md:px-40">
+      <div className="relative px-16 md:px-40">
         <button className="team-prev absolute left-0 md:left-10 top-1/2 bottom-1/2">
-          <img src="/arrow-left.png" className="h-10 md:h-24 rotate-180" />
+          <img src="/arrow-left.png" className="h-8 md:h-24 rotate-180" />
         </button>
         <button className="team-next absolute right-0 md:right-10 top-1/2 bottom-1/2">
-          <img src="/arrow-left.png" className="h-10 md:h-24" />
+          <img src="/arrow-left.png" className="h-8 md:h-24" />
         </button>
         <Swiper
           modules={[Navigation, Pagination, Autoplay]}
@@ -334,22 +338,23 @@ export default function Home() {
             nextEl: ".team-next",
             prevEl: ".team-prev",
           }}
+          wrapperClass="py-10"
           pagination={{ clickable: true }}
           onSwiper={(swiper) => console.log(swiper)}
         >
-          <SwiperSlide className="">
+          <SwiperSlide className="max-md:text-center">
             <img src="/person.png" className="pl-8" />
-            <h4 className="text-[#093A01] font-medium">Kylan Gentry</h4>
+            <h4 className="text-[#093A01] font-medium my-2">Kylan Gentry</h4>
             <p className="text-[#25CA0A] font-medium">CEO & Cofounder</p>
           </SwiperSlide>
-          <SwiperSlide className="">
+          <SwiperSlide className="max-md:text-center">
             <img src="/person.png" className="pl-8" />
-            <h4 className="text-[#093A01] font-medium">Kylan Gentry</h4>
+            <h4 className="text-[#093A01] font-medium my-2">Kylan Gentry</h4>
             <p className="text-[#25CA0A] font-medium">CEO & Cofounder</p>
           </SwiperSlide>
-          <SwiperSlide className="">
+          <SwiperSlide className="max-md:text-center">
             <img src="/person.png" className="pl-8" />
-            <h4 className="text-[#093A01] font-medium">Kylan Gentry</h4>
+            <h4 className="text-[#093A01] font-medium my-2">Kylan Gentry</h4>
             <p className="text-[#25CA0A] font-medium">CEO & Cofounder</p>
           </SwiperSlide>
         </Swiper>
@@ -401,7 +406,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className=" bg-[#052100E5]">
+      <div className="bg-[#052100E5]">
         <div className="flex justify-center md:px-10 px-4 pt-10 pb-8 text-white flex-wrap md:flex-row gap-10 md:gap-48">
           <div className="flex flex-col gap-8 pb-10">
             <p className="font-semibold pb-4">kisan saathi</p>
