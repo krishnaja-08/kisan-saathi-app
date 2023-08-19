@@ -86,7 +86,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="flex items-center flex-col md:flex-row gap-4 md:gap-20">
+        <div className="flex items-center flex-col md:flex-row gap-4 md:gap-16">
           <p className="pb-2 border-b-4 border-b-green-500">Output</p>
           <div className="grid grid-cols-2 gap-x-4 gap-y-4 md:gap-x-16 md:flex md:flex-row">
             <div className="flex flex-col ">
@@ -111,7 +111,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="flex items-center flex-col md:flex-row gap-4 md:gap-10">
+        <div className="flex items-center flex-col md:flex-row gap-4 md:gap-4">
           <p className="pb-2 border-b-4 border-b-green-500">Consultancy</p>
           <div className="grid grid-cols-2 gap-x-4 gap-y-4 md:gap-x-16 md:flex md:flex-row">
             <div className="flex flex-col">
