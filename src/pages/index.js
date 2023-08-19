@@ -66,84 +66,86 @@ export default function Home() {
         <img src="challenges.png" className="hidden md:block h-[60%]"></img>
         <img src="android.png" className="md:hidden"></img>
       </div>
-      <h2 className="text-2xl md:text-4xl flex gap-2 py-10 justify-center font-semibold">
+      <h2 className="text-2xl md:text-4xl flex gap-2 py-10 justify-center font-semibold capitalize">
         Our <span className="text-[#25CA0A]"> services</span>
       </h2>
-      <div className="flex flex-col justify-center text-[#093A01] font-semibold gap-8 px-20">
-        <div className="flex items-center flex-wrap flex-row gap-4 md:gap-20">
-          <p>Input</p>
-          <div className="grid grid-cols-2 gap-x-4 md:flex md:flex-row">
-            <div className="flex flex-col items-center justify-center">
-              <img src="input.png" className="aspect-square w-[12em]"></img>
-              <p className="text-center">InputConnect</p>
+      <div className="flex flex-col justify-center text-[#093A01] font-semibold gap-8 px-4 md:px-20">
+        <div className="flex items-center flex-col md:flex-row gap-4 md:gap-20">
+          <p className="pb-2 border-b-4 border-b-green-500">Input</p>
+          <div className="grid grid-cols-2 gap-x-4 gap-y-4 md:gap-x-16 md:flex md:flex-row">
+            <div className="flex flex-col">
+              <img src="ic.svg" className="shadow-2xl rounded-full w-32"></img>
+              <p className="text-center mt-4">InputConnect</p>
             </div>
-            <div className="flex flex-col items-center justify-center">
-              <img src="access.png" className="w-[12em] aspect-square"></img>
-              <p className="text-center">Requirement Chart</p>
-            </div>
-          </div>
-        </div>
-        <div className="flex items-center flex-row flex-wrap gap-4 md:gap-20">
-          <p>Output</p>
-          <div className="grid grid-cols-2 md:flex md:flex-row">
-            <div className="flex flex-col items-center justify-center">
-              <img src="market.png" className="w-[12em]"></img>
-              <p>Market Linkage</p>
-            </div>
-            <div className="flex flex-col items-center justify-center">
-              <img src="access.png" className="w-[12em]"></img>
-              <p>Weekly Harvsting </p>
-              <p>Index</p>
-            </div>
-
-            <div className="flex flex-col items-center justify-center">
-              <img src="access.png" className="w-[12em]"></img>
-              <p>Sorting &amp; Grading </p>
-              <p>Training</p>
-            </div>
-            <div className="flex flex-col items-center">
-              <img src="market.png" className="w-[12em]"></img>
-              <p>Customized </p>
-              <p>Marketing </p>
-              <p>Strategies</p>
-            </div>
-          </div>
-        </div>
-        <div className="flex items-center flex-row flex-wrap gap-4 md:gap-20">
-          <p>Consultancy</p>
-          <div className="grid grid-cols-2 md:flex md:flex-row">
-            <div className="flex flex-col items-center ">
-              <img src="access.png" className="w-[12em]"></img>
-              <p>Access to</p>
-              <p> kisanSaathiApp</p>
-            </div>
-            <div className="flex flex-col items-center justify-center">
-              <img src="tech.png" className="w-[12em]"></img>
-              <p>
-                Technology<br></br>(Extension<br></br> Services)
+            <div className="flex flex-col">
+              <img src="cas.svg" className="shadow-2xl rounded-full w-32"></img>
+              <p className="text-center mt-4">
+                Credit Access
+                <br /> Support
               </p>
             </div>
-            <div className="flex flex-col items-center justify-center">
-              <img src="access.png" className="w-[12em]"></img>
-              <p>Service Providers</p>
-              <p> Connect</p>
+          </div>
+        </div>
+        <div className="flex items-center flex-col md:flex-row gap-4 md:gap-20">
+          <p className="pb-2 border-b-4 border-b-green-500">Output</p>
+          <div className="grid grid-cols-2 gap-x-4 gap-y-4 md:gap-x-16 md:flex md:flex-row">
+            <div className="flex flex-col ">
+              <img src="ml.svg" className="shadow-2xl rounded-full w-32"></img>
+              <p className="text-center mt-4 w-32">Market Linkage</p>
             </div>
-            <div className="flex flex-col items-center justify-center">
-              <img src="access.png" className="w-[12em]"></img>
-              <p>FPO Wise</p>
-              <p> Commodity Value</p>
-              <p> Chain Creation</p>
+            <div className="flex flex-col ">
+              <img src="whi.svg" className="shadow-2xl rounded-full w-32"></img>
+              <p className="mt-4 text-center w-32">Weekly Harvsting Index </p>
             </div>
-            <div className="items-center justify-center flex flex-col">
-              <img src="access.png" className="w-[12em]"></img>
-              <p>Strengthening</p>
-              <p>FPOs Business </p>
-              <p>Verticles</p>
+            <div className="flex flex-col ">
+              <img src="sgt.svg" className="shadow-2xl rounded-full w-32"></img>
+              <p className="mt-4 text-center w-32">
+                Sorting &amp; Grading Training
+              </p>
             </div>
-            <div className="flex flex-col items-center justify-center">
-              <img src="swot.png" className="w-[12em]"></img>
-              <p>FPO SWOT </p>
-              <p>Analysis</p>
+            <div className="flex flex-col">
+              <img src="cms.svg" className="shadow-2xl rounded-full w-32"></img>
+              <p className="mt-4 text-center w-32">
+                Customized Marketing Strategies
+              </p>
+            </div>
+          </div>
+        </div>
+        <div className="flex items-center flex-col md:flex-row gap-4 md:gap-10">
+          <p className="pb-2 border-b-4 border-b-green-500">Consultancy</p>
+          <div className="grid grid-cols-2 gap-x-4 gap-y-4 md:gap-x-16 md:flex md:flex-row">
+            <div className="flex flex-col">
+              <img src="ksa.svg" className="shadow-2xl rounded-full w-32"></img>
+              <p className="mt-4 text-center w-32">Access to kisanSaathiApp</p>
+            </div>
+            <div className="flex flex-col ">
+              <img src="tes.svg" className="shadow-2xl rounded-full w-32"></img>
+              <p className="w-32 text-center mt-4">
+                Technology (Extension Services)
+              </p>
+            </div>
+            <div className="flex flex-col ">
+              <img src="ksa.svg" className="shadow-2xl rounded-full w-32"></img>
+              <p className="w-32 text-center mt-4">Service Providers Connect</p>
+            </div>
+            <div className="flex flex-col ">
+              <img src="ksa.svg" className="shadow-2xl rounded-full w-32"></img>
+              <p className="mt-4 text-center w-32">
+                FPO Wise Commodity Value Chain Creation
+              </p>
+            </div>
+            <div className=" flex flex-col">
+              <img src="ksa.svg" className="shadow-2xl rounded-full w-32"></img>
+              <p className="mt-4 text-center w-32">
+                Strengthening FPOs Business Verticles
+              </p>
+            </div>
+            <div className="flex flex-col ">
+              <img
+                src="swot.svg"
+                className="shadow-2xl rounded-full w-32"
+              ></img>
+              <p className="w-32 text-center mt-4">FPO SWOT Analysis</p>
             </div>
           </div>
         </div>
