@@ -35,7 +35,8 @@ export default function Home() {
           <div className="text-center md:text-start">
             <button className="w-fit px-10 py-5 text-xl rounded-2xl bg-gradient-to-r from-[#DDFCA999] to-[#D2EFA31A] text-white font-bold">
               See more
-            </button></div>
+            </button>
+          </div>
         </div>
       </div>
       <div className="flex flex-col-reverse space-x-10 relative pt-[5%] px-8 md:px-0 md:pl-0 pb-[20%] z-20">
@@ -48,10 +49,9 @@ export default function Home() {
           
             sustainability and better farm income realisation of
             farmers, FPO&apos;s through effective capacity building , FPO{" "}
-            Management, collectivisation approach, agronomy ,{" "}
-            cutlivating practices, transfer of technology, improved post{" "}
-            harvest management and efficient front end market
-            linkages{" "}
+            Management, collectivisation approach, agronomy , cutlivating
+            practices, transfer of technology, improved post harvest management
+            and efficient front end market linkages{" "}
           </p>
         </div>
         <div className="md:absolute md:w-3/5 -top-10 md:top-0 right-0 h-full">
@@ -70,17 +70,16 @@ export default function Home() {
         Our <span className="text-[#25CA0A]"> services</span>
       </h2>
       <div className="flex flex-col justify-center text-[#093A01] font-semibold gap-8 px-20">
-        <div className="flex items-center md:flex-row gap-4 md:gap-20">
+        <div className="flex items-center flex-wrap flex-row gap-4 md:gap-20">
           <p>Input</p>
-          <div className="grid grid-cols-2 md:flex md:flex-row"></div>
-          <div className="flex flex-col">
-            <div className="flex flex-row items-center justify-center">
-              <img src="input.png" className="aspect-square h-[12em]"></img>
-            <img src="access.png" className="h-[12em] aspect-square"></img>
+          <div className="grid grid-cols-2 gap-x-4 md:flex md:flex-row">
+            <div className="flex flex-col items-center justify-center">
+              <img src="input.png" className="aspect-square w-[12em]"></img>
+              <p className="text-center">InputConnect</p>
             </div>
-            <div className="flex flex-row text-center">
-              <p className="w-[12em] text-center">InputConnect</p>
-              <p className="w-[12em] text-center">Requirement Chart</p>
+            <div className="flex flex-col items-center justify-center">
+              <img src="access.png" className="w-[12em] aspect-square"></img>
+              <p className="text-center">Requirement Chart</p>
             </div>
           </div>
         </div>
@@ -147,7 +146,6 @@ export default function Home() {
               <p>Analysis</p>
             </div>
           </div>
-
         </div>
       </div>
       <h2 className="text-2xl md:text-4xl text-center pb-4 pt-24 font-semibold">
@@ -192,8 +190,8 @@ export default function Home() {
                 <p className="font-bold text-3xl">Forbes magazine, 2019</p>
                 <br></br>
                 <p>
-                  The 'Farmer's Companion' Bringing Together Food Buyers And
-                  Producers In Urban India
+                  The &quot;Farmer&quot;s Companion&quot; Bringing Together Food
+                  Buyers And Producers In Urban India
                 </p>
                 <br />
               </div>
@@ -370,7 +368,7 @@ export default function Home() {
           <h3 className="font-semibold text-3xl md:text-2xl">Contact Us</h3>
           <form
             action="#"
-            onSubmit={(e) => { }}
+            onSubmit={(e) => {}}
             className="gap-y-4 flex  flex-col mt-10 relative md:w-1/2"
           >
             <label className="font-bold">Name</label>
@@ -403,7 +401,8 @@ export default function Home() {
                 className="bg-green-400 rounded-2xl w-fit px-8 py-3 text-white"
               >
                 Submit
-              </button></div>
+              </button>
+            </div>
           </form>
           <div className="w-[55%] hidden md:block pt-20 absolute top-0 right-0 h-full">
             <img
@@ -471,8 +470,6 @@ export default function Home() {
           Copyright 2023 | All Rights Reserved
         </p>
       </div>
-
-
     </main>
   );
 }
