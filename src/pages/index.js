@@ -20,13 +20,13 @@ const poppins = Poppins({
 export default function Home() {
   return (
     <main className={`${poppins.className}`}>
-      <div className="bg-landing bg-contain w-full h-full bg-no-repeat z-50">
-        <div className="flex w-full md:w-[50%] text-center md:text-start  pt-[20%] md:pt-[40%] md:pb-[20%] md:py-0 md:px-0 py-20 text-xl md:text-3xl px-10 md:pl-40 flex-col">
-          <h1 className="text-transparent bg-clip-text bg-gradient-to-r font-semibold from-[#FFFFFF]/70 to-[#BCF5B2]">
-            Strengthening<br></br>FPO&apos;s
+      <div className="bg-landing md:bg-cover bg-contain md:bg-bottom w-full h-screen bg-no-repeat z-50">
+        <div className="flex w-full md:w-[50%] text-center md:text-start  pt-[20%] md:pt-[16%] md:pb-[20%] md:py-0 md:px-0 py-10 text-xl md:text-3xl px-10 md:pl-40 flex-col">
+          <h1 className="text-transparent bg-clip-text bg-gradient-to-r md:text-4xl font-semibold from-[#FFFFFF] to-[#BCF5B2]">
+            Strengthening <span className="text-[#BCF5B2]">FPO&apos;s</span>
           </h1>
           <br></br>
-          <p className="text-[#FFFFFF]/70">
+          <p className="text-[#FFFFFF]">
             Strengthening FPO&quot;s, Strengthening Agriculture through
             Economics of aggregation by Uniting the farms and farmers through
             FPO’s
@@ -44,22 +44,22 @@ export default function Home() {
           <h2 className="text-2xl md:text-4xl py-8 font-semibold text-[#093A01] ">
             About <span className="text-[#25CA0A]">Us</span>
           </h2>
-          <p className="text-xl">
+          <p className="text-xl text-justify">
             An initiative to build FPO&apos;s of India - creating self
-            <br></br>
-            sustainability and better farm income realisation of <br></br>
+          
+            sustainability and better farm income realisation of
             farmers, FPO&apos;s through effective capacity building , FPO{" "}
             Management, collectivisation approach, agronomy , cutlivating
             practices, transfer of technology, improved post harvest management
             and efficient front end market linkages{" "}
           </p>
         </div>
-        <div className="md:absolute md:w-3/5 -top-10 right-0 h-full">
+        <div className="md:absolute md:w-3/5 -top-10 md:top-0 right-0 h-full">
           <img className="w-full h-full object-contain" src="smart.png" />
         </div>
       </div>
-      <div className="flex flex-col items-center text-[#093A01] py-2 gap-8">
-        <h2 className="text-2xl md:text-4xl font-semibold">
+      <div className="flex flex-col items-center text-[#093A01] py-4 gap-8">
+        <h2 className="text-2xl md:text-4xl pt-10 font-semibold">
           Addressing Challenges of{" "}
           <span className="text-[#25CA0A]">Agriculture</span>
         </h2>
@@ -148,9 +148,8 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <h2 className="text-2xl md:text-4xl text-center pb-8 pt-10 font-semibold">
-        Insight Corner :{" "}
-        <span className="text-[#25CA0A]">Featured articles</span>
+      <h2 className="text-2xl md:text-4xl text-center pb-4 pt-24 font-semibold">
+        Insight Corner : <span className="text-[#25CA0A]">Featured articles</span>
       </h2>
       <div className="px-10 md:px-40 relative">
         <button className="swiper-prev absolute left-0 md:left-10 top-1/2 bottom-1/2">
@@ -285,7 +284,7 @@ export default function Home() {
           <img src="/leftbutton.png" className="h-10 md:h-24 rotate-180" />
         </button>
       </div>
-      <div className="flex flex-col items-center py-12 gap-12">
+      <div className="flex flex-col items-center py-12 md:pt-20 gap-12">
         <h2 className="text-2xl md:text-4xl font-semibold">
           Partner&apos;s Trust <span className="text-[#25CA0A]">Our pride</span>
         </h2>
