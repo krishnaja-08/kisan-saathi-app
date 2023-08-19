@@ -46,16 +46,15 @@ export default function Home() {
           </h2>
           <p className="text-xl text-justify">
             An initiative to build FPO&apos;s of India - creating self
-          
-            sustainability and better farm income realisation of
-            farmers, FPO&apos;s through effective capacity building , FPO{" "}
-            Management, collectivisation approach, agronomy , cutlivating
-            practices, transfer of technology, improved post harvest management
-            and efficient front end market linkages{" "}
+            sustainability and better farm income realisation of farmers,
+            FPO&apos;s through effective capacity building , FPO Management,
+            collectivisation approach, agronomy , cutlivating practices,
+            transfer of technology, improved post harvest management and
+            efficient front end market linkages{" "}
           </p>
         </div>
         <div className="md:absolute md:w-3/5 -top-10 md:top-0 right-0 h-full">
-          <img className="w-full h-full object-contain" src="smart.png" />
+          <img className="w-full h-full object-contain" src="smart.webp" />
         </div>
       </div>
       <div className="flex flex-col items-center text-[#093A01] py-4 gap-8">
@@ -63,8 +62,8 @@ export default function Home() {
           Addressing Challenges of{" "}
           <span className="text-[#25CA0A]">Agriculture</span>
         </h2>
-        <img src="challenges.png" className="hidden md:block h-[60%]"></img>
-        <img src="android.png" className="md:hidden"></img>
+        <img src="challenges.webp" className="hidden md:block h-[60%]"></img>
+        <img src="android.webp" className="md:hidden"></img>
       </div>
       <h2 className="text-2xl md:text-4xl flex gap-2 py-10 justify-center font-semibold capitalize">
         Our <span className="text-[#25CA0A]"> services</span>
@@ -151,11 +150,12 @@ export default function Home() {
         </div>
       </div>
       <h2 className="text-2xl md:text-4xl text-center pb-4 pt-24 font-semibold">
-        Insight Corner : <span className="text-[#25CA0A]">Featured articles</span>
+        Insight Corner :{" "}
+        <span className="text-[#25CA0A]">Featured articles</span>
       </h2>
       <div className="px-10 md:px-40 relative">
         <button className="swiper-prev absolute left-0 md:left-10 top-1/2 bottom-1/2">
-          <img src="/leftbutton.png" className="h-10 md:h-24" />
+          <img src="/leftbutton.webp" className="h-10 md:h-24" />
         </button>
         <Swiper
           modules={[Navigation, Pagination, Autoplay]}
@@ -283,7 +283,7 @@ export default function Home() {
           </SwiperSlide>
         </Swiper>
         <button className="swiper-next absolute right-0 md:right-10 top-1/2 bottom-1/2">
-          <img src="/leftbutton.png" className="h-10 md:h-24 rotate-180" />
+          <img src="/leftbutton.webp" className="h-10 md:h-24 rotate-180" />
         </button>
       </div>
       <div className="flex flex-col items-center py-12 md:pt-20 gap-12">
@@ -292,18 +292,18 @@ export default function Home() {
         </h2>
         <div className="flex flex-row gap-8 md:block">
           <div className="flex flex-col md:flex-row justify-center items-center gap-8 md:gap-20">
-            <img src="atal.png" className="w-[16em]"></img>
-            <img src="garuda.jpeg" className="w-[12em]"></img>
-            <img src="giz.png" className="w-[16em]"></img>
-            <img src="go.png" className="w-[12em]"></img>
-            <img src="Cell.jpg" className="w-[12em]"></img>
+            <img src="atal.webp" className="w-[16em]"></img>
+            <img src="garuda.webp" className="w-[12em]"></img>
+            <img src="giz.webp" className="w-[16em]"></img>
+            <img src="go.webp" className="w-[12em]"></img>
+            <img src="Cell.webp" className="w-[12em]"></img>
           </div>
           <div className="flex flex-col md:flex-row justify-center items-center gap-16 md:gap-28">
-            <img src="hyd.jpg" className="w-[12em] h-12"></img>
-            <img src="svm.png" className="w-[12em]"></img>
-            <img src="alpha.png" className="w-[12em]"></img>
-            <img src="vision.png" className="w-[12em]"></img>
-            <img src="waycool.jpg" className="w-[8em]"></img>
+            <img src="hyd.webp" className="w-[12em] h-12"></img>
+            <img src="svm.webp" className="w-[12em]"></img>
+            <img src="alpha.webp" className="w-[12em]"></img>
+            <img src="vision.webp" className="w-[12em]"></img>
+            <img src="waycool.webp" className="w-[8em]"></img>
           </div>
         </div>
       </div>
@@ -312,10 +312,10 @@ export default function Home() {
       </h2>
       <div className="relative px-16 md:px-40">
         <button className="team-prev absolute left-0 md:left-10 top-1/2 bottom-1/2">
-          <img src="/arrow-left.png" className="h-8 md:h-24 rotate-180" />
+          <img src="/arrow-left.webp" className="h-8 md:h-24 rotate-180" />
         </button>
         <button className="team-next absolute right-0 md:right-10 top-1/2 bottom-1/2">
-          <img src="/arrow-left.png" className="h-8 md:h-24" />
+          <img src="/arrow-left.webp" className="h-8 md:h-24" />
         </button>
         <Swiper
           modules={[Navigation, Pagination, Autoplay]}
@@ -349,17 +349,17 @@ export default function Home() {
           onSwiper={(swiper) => console.log(swiper)}
         >
           <SwiperSlide className="max-md:text-center">
-            <img src="/person.png" className="pl-8" />
+            <img src="/person.webp" className="pl-8" />
             <h4 className="text-[#093A01] font-medium my-2">Kylan Gentry</h4>
             <p className="text-[#25CA0A] font-medium">CEO & Cofounder</p>
           </SwiperSlide>
           <SwiperSlide className="max-md:text-center">
-            <img src="/person.png" className="pl-8" />
+            <img src="/person.webp" className="pl-8" />
             <h4 className="text-[#093A01] font-medium my-2">Kylan Gentry</h4>
             <p className="text-[#25CA0A] font-medium">CEO & Cofounder</p>
           </SwiperSlide>
           <SwiperSlide className="max-md:text-center">
-            <img src="/person.png" className="pl-8" />
+            <img src="/person.webp" className="pl-8" />
             <h4 className="text-[#093A01] font-medium my-2">Kylan Gentry</h4>
             <p className="text-[#25CA0A] font-medium">CEO & Cofounder</p>
           </SwiperSlide>
@@ -408,7 +408,7 @@ export default function Home() {
           </form>
           <div className="w-[55%] hidden md:block pt-20 absolute top-0 right-0 h-full">
             <img
-              src="/contactus.png"
+              src="/contactus.webp"
               className="object-contain w-full h-full"
             />
           </div>
@@ -433,37 +433,37 @@ export default function Home() {
             <div className="font-semibold">Get in touch</div>
             <div className="flex flex-row gap-12 pb-2">
               <a href="https://twitter.com/KisanSaathi" target="_blank">
-                <img src="twitter.png" className="w-[1.5em]"></img>
+                <img src="twitter.webp" className="w-[1.5em]"></img>
               </a>
               <a
                 href="https://www.linkedin.com/company/kisansaathi/"
                 target="_blank"
               >
-                <img src="linkedin.png" className="w-[1.5em]"></img>
+                <img src="linkedin.webp" className="w-[1.5em]"></img>
               </a>
               <a
                 href="https://instagram.com/kisan.saathi?igshid=NGExMmI2YTkyZg=="
                 target="_blank"
               >
-                <img src="insta.png" className="w-[1.5em]"></img>
+                <img src="insta.webp" className="w-[1.5em]"></img>
               </a>
               <a href="https://www.facebook.com/KisanSaathi" target="_blank">
-                <img src="fb.png" className="w-[1.5em]"></img>
+                <img src="fb.webp" className="w-[1.5em]"></img>
               </a>
             </div>
             <div className="flex flex-row items-center gap-8">
-              <img src="time.png" className="w-[1em]"></img>
+              <img src="time.webp" className="w-[1em]"></img>
               <div className="flex flex-col gap-4">
                 <p>Weekdays 10 am - 6 pm</p>
                 <p>Weekends 10 am - 3pm</p>
               </div>
             </div>
             <div className="flex flex-row gap-8">
-              <img src="phone.png" className="w-[1em]"></img>
+              <img src="phone.webp" className="w-[1em]"></img>
               <p className="underline">+91 - 8475651452</p>
             </div>
             <div className="flex flex-row gap-8">
-              <img src="mail.png" className="w-[1em]"></img>
+              <img src="mail.webp" className="w-[1em]"></img>
               <p className="underline">support@kisansaathi.com</p>
             </div>
           </div>

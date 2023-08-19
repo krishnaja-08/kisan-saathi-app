@@ -21,7 +21,7 @@ export default function Navbar() {
         ref={navRef}
         className="flex flex-row px-12 py-2 justify-between items-center transition-colors duration-300 ease-in-out"
       >
-        <img src="logo.png" className="h-[4em] px-8"></img>
+        <img src="logo.webp" className="h-[4em] px-8"></img>
         <div className="md:flex hidden text-right flex-row gap-12 text-[#093A01] font-semibold">
           <Link href="#">Home</Link>
           <Link href="#">About us</Link>
@@ -32,21 +32,22 @@ export default function Navbar() {
           <Link href="#">Contact us</Link>
         </div>
         <div className="flex flex-row gap-8 ">
-          <img src="search.png" className="h-[2em] md:hidden"></img>
+          <img src="search.webp" className="h-[2em] md:hidden"></img>
           <div className="flex flex-col">
             <img
               onClick={() => {
                 setVal(!val);
               }}
-              src="menu.png"
+              src="menu.webp"
               className="h-[2em] md:hidden"
             ></img>
           </div>
         </div>
       </div>
       <div
-        className={`${val === true ? "flex" : "hidden"
-          } md:hidden text-end flex-col gap-8 text-[#093A01] font-semibold`}
+        className={`${
+          val === true ? "flex" : "hidden"
+        } md:hidden text-end flex-col gap-8 text-[#093A01] font-semibold`}
       >
         <Link href="#">Home</Link>
         <Link href="#">About us</Link>
