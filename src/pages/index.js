@@ -20,8 +20,8 @@ export default function Home() {
         <title>Kisan Saathi</title>
       </Head>
       <main className={`${poppins.className}`}>
-        <div className="bg-landing bg-cover md:bg-bottom w-full h-screen bg-no-repeat z-50">
-          <div className="flex w-full md:w-[50%] text-center md:text-start h-full pt-[20%] md:pt-[16%] md:pb-[20%] md:py-0 md:px-0 py-10 text-xl md:text-3xl px-10 md:pl-40 flex-col">
+        <div className="max-md:bg-mobileBG md:bg-landing bg-cover md:bg-bottom w-full h-screen bg-no-repeat z-50">
+          <div className="flex w-full md:w-[50%] text-center md:text-start h-full pt-[40%] md:pt-[16%] md:pb-[20%] md:py-0 md:px-0 py-10 text-xl md:text-3xl px-10 md:pl-40 flex-col">
             <h1 className="text-transparent bg-clip-text bg-gradient-to-r text-4xl font-semibold from-[#FFFFFF] to-[#BCF5B2]">
               Strengthening <span className="text-[#BCF5B2]">FPO&apos;s</span>
             </h1>
