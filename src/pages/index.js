@@ -348,20 +348,18 @@ export default function Home() {
               <img src="waycool.webp" className="w-[8em]"></img>
             </div>
           </div>
-          <div className="md:hidden overflow-hidden">
-            <Marquee className="loop-0 speed-80 md:hidden">
-              <div className="flex flex-row items-center justify-center gap-8 ">
-                <img src="atal.webp" className="w-[20em]"></img>
-                <img src="garuda.webp" className="w-[16em]"></img>
-                <img src="giz.webp" className="w-[20em]"></img>
-                <img src="go.webp" className="w-[16em]"></img>
-                <img src="Cell.webp" className="w-[16em]"></img>
-                <img src="hyd.webp" className="w-[16em] h-12"></img>
-                <img src="svm.webp" className="w-[16em]"></img>
-                <img src="alpha.webp" className="w-[16em]"></img>
-                <img src="vision.webp" className="w-[16em]"></img>
-                <img src="waycool.webp" className="w-[12em] mr-12"></img>
-              </div>
+          <div className="md:hidden">
+            <Marquee className="gap-10 flex justify-center items-center">
+              <img src="atal.webp" className="w-[20em]"></img>
+              <img src="garuda.webp" className="w-[16em]"></img>
+              <img src="giz.webp" className="w-[20em]"></img>
+              <img src="go.webp" className="w-[16em]"></img>
+              <img src="Cell.webp" className="w-[16em]"></img>
+              <img src="hyd.webp" className="w-[16em] h-12"></img>
+              <img src="svm.webp" className="w-[16em]"></img>
+              <img src="alpha.webp" className="w-[16em]"></img>
+              <img src="vision.webp" className="w-[16em]"></img>
+              <img src="waycool.webp" className="w-[12em] mr-12"></img>
             </Marquee>
           </div>
         </div>
