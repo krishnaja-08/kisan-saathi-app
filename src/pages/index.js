@@ -1,11 +1,5 @@
 import { Poppins } from "next/font/google";
-import {
-  Navigation,
-  Pagination,
-  Scrollbar,
-  A11y,
-  Autoplay,
-} from "swiper/modules";
+import { Navigation, Pagination, Autoplay } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
@@ -25,7 +19,7 @@ export default function Home() {
         <title>Kisan Saathi</title>
       </Head>
       <main className={`${poppins.className}`}>
-        <div className="bg-landing md:bg-cover bg-contain md:bg-bottom w-full h-screen bg-no-repeat z-50">
+        <div className="bg-landing bg-cover md:bg-bottom w-full h-screen bg-no-repeat z-50">
           <div className="flex w-full md:w-[50%] text-center md:text-start h-full pt-[40%] md:pt-[16%] md:pb-[20%] md:py-0 md:px-0 py-10 text-xl md:text-3xl px-10 md:pl-40 flex-col">
             <h1 className="text-transparent bg-clip-text bg-gradient-to-r md:text-4xl font-semibold from-[#FFFFFF] to-[#BCF5B2]">
               Strengthening <span className="text-[#BCF5B2]">FPO&apos;s</span>
