@@ -11,6 +11,7 @@ module.exports = {
         "home-hero": "url('/home-bg.webp')",
         slide1: "url('/slide1.webp')",
         landing: "url('/landing.webp')",
+        mobileBG: "url('/mobileBG.webp')",
       },
       backgroundSize: {
         "100%": "100%",
