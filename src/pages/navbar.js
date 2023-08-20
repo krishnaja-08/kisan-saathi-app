@@ -16,7 +16,7 @@ export default function Navbar() {
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
   return (
-    <div className="flex bg-white/40 backdrop-blur flex-col fixed top-0 w-full left-0 z-50 ">
+    <div className="flex bg-white/40 md:backdrop-blur backdrop-blur-lg flex-col fixed top-0 w-full left-0 z-50 ">
       <div
         ref={navRef}
         className="flex flex-row px-12 py-2 justify-between items-center transition-colors duration-300 ease-in-out"
@@ -32,7 +32,7 @@ export default function Navbar() {
           <Link href="#">Contact us</Link>
         </div>
         <div className="flex flex-row gap-8 ">
-          <img src="search.webp" className="h-[2em] md:hidden"></img>
+          
           <div className="flex flex-col">
             <img
               onClick={() => {
@@ -47,7 +47,7 @@ export default function Navbar() {
       <div
         className={`${
           val === true ? "flex" : "hidden"
-        } md:hidden text-end flex-col gap-8 text-[#093A01] font-semibold`}
+        } md:hidden text-center py-4 flex-col items-center gap-8 text-[#093A01] font-semibold`}
       >
         <Link href="#">Home</Link>
         <Link href="#">About us</Link>
