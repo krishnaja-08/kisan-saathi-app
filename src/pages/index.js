@@ -6,6 +6,7 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/autoplay";
 import Head from "next/head";
+import Marquee from "react-fast-marquee";
 
 const poppins = Poppins({
   weight: ["400", "500", "600", "700", "800", "900"],
@@ -20,12 +21,12 @@ export default function Home() {
       </Head>
       <main className={`${poppins.className}`}>
         <div className="bg-landing bg-cover md:bg-bottom w-full h-screen bg-no-repeat z-50">
-          <div className="flex w-full md:w-[50%] text-center md:text-start h-full pt-[40%] md:pt-[16%] md:pb-[20%] md:py-0 md:px-0 py-10 text-xl md:text-3xl px-10 md:pl-40 flex-col">
-            <h1 className="text-transparent bg-clip-text bg-gradient-to-r md:text-4xl font-semibold from-[#FFFFFF] to-[#BCF5B2]">
+          <div className="flex w-full md:w-[50%] text-center md:text-start h-full pt-[20%] md:pt-[16%] md:pb-[20%] md:py-0 md:px-0 py-10 text-xl md:text-3xl px-10 md:pl-40 flex-col">
+            <h1 className="text-transparent bg-clip-text bg-gradient-to-r text-4xl font-semibold from-[#FFFFFF] to-[#BCF5B2]">
               Strengthening <span className="text-[#BCF5B2]">FPO&apos;s</span>
             </h1>
             <br></br>
-            <p className="text-[#FFFFFF]">
+            <p className="text-[#FFFFFF] text-2xl md:block">
               Strengthening FPO&quot;s, Strengthening Agriculture through
               Economics of aggregation by Uniting the farms and farmers through
               FPO’s
@@ -331,7 +332,7 @@ export default function Home() {
             Partner&apos;s Trust{" "}
             <span className="text-[#25CA0A]">Our pride</span>
           </h2>
-          <div className="flex flex-row gap-8 px-10 md:block">
+          <div className="hidden flex-row gap-8 px-10 md:block">
             <div className="flex flex-col md:flex-row justify-center items-center gap-8 md:gap-20">
               <img src="atal.webp" className="w-[16em]"></img>
               <img src="garuda.webp" className="w-[12em]"></img>
@@ -346,6 +347,21 @@ export default function Home() {
               <img src="vision.webp" className="w-[12em]"></img>
               <img src="waycool.webp" className="w-[8em]"></img>
             </div>
+          </div>
+          <div className="md:hidden">
+          <Marquee className="loop-0 speed-80 md:hidden">
+          <div className="flex flex-row items-center justify-center gap-8 ">
+          <img src="atal.webp" className="w-[20em]"></img>
+              <img src="garuda.webp" className="w-[16em]"></img>
+              <img src="giz.webp" className="w-[20em]"></img>
+              <img src="go.webp" className="w-[16em]"></img>
+              <img src="Cell.webp" className="w-[16em]"></img>
+              <img src="hyd.webp" className="w-[16em] h-12"></img>
+              <img src="svm.webp" className="w-[16em]"></img>
+              <img src="alpha.webp" className="w-[16em]"></img>
+              <img src="vision.webp" className="w-[16em]"></img>
+              <img src="waycool.webp" className="w-[12em] mr-12"></img></div>
+          </Marquee>
           </div>
         </div>
         <h2 className="text-2xl md:text-4xl font-semibold text-center pb-4">
