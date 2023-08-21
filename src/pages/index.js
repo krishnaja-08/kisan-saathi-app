@@ -88,10 +88,10 @@ export default function Home() {
           >
             Our <span className="text-[#25CA0A]"> services</span>
           </h2>
-          <div className="flex flex-col justify-center text-[#093A01] font-semibold gap-8 px-4 md:px-20">
+          <div className="flex flex-col justify-center text-[#093A01] font-semibold gap-8 px-4 md:px-36">
             <div className="flex items-center flex-col md:flex-row gap-4 md:gap-20">
               <p className="pb-2 border-b-4 border-b-green-500">Input</p>
-              <div className="grid grid-cols-2 gap-x-4 gap-y-4 md:gap-x-16 md:flex md:flex-row">
+              <div className="grid grid-cols-2 gap-x-4 gap-y-4 md:gap-x-16 md:pl-8 md:flex md:flex-row">
                 <div className="flex flex-col">
                   <img
                     src="ic.svg"
@@ -113,7 +113,7 @@ export default function Home() {
             </div>
             <div className="flex items-center flex-col md:flex-row gap-4 md:gap-16">
               <p className="pb-2 border-b-4 border-b-green-500">Output</p>
-              <div className="grid grid-cols-2 gap-x-4 gap-y-4 md:gap-x-16 md:flex md:flex-row">
+              <div className="grid grid-cols-2 gap-x-4 gap-y-4 md:gap-x-16 md:pl-8 md:flex md:flex-row">
                 <div className="flex flex-col ">
                   <img
                     src="ml.svg"
@@ -154,7 +154,7 @@ export default function Home() {
             </div>
             <div className="flex items-center flex-col md:flex-row gap-4 md:gap-4">
               <p className="pb-2 border-b-4 border-b-green-500">Consultancy</p>
-              <div className="grid grid-cols-2 gap-x-4 gap-y-4 md:gap-x-16 md:flex md:flex-row">
+              <div className="grid grid-cols-2 gap-x-4 gap-y-4 md:gap-x-16 md:pl-8 md:flex md:flex-row">
                 <div className="flex flex-col">
                   <img
                     src="ksa.svg"
@@ -175,7 +175,7 @@ export default function Home() {
                 </div>
                 <div className="flex flex-col ">
                   <img
-                    src="ksa.svg"
+                    src="spc.svg"
                     className="shadow-2xl rounded-full w-28 md:w-32"
                   ></img>
                   <p className="w-28 md:w-32 text-center mt-4">
@@ -184,7 +184,7 @@ export default function Home() {
                 </div>
                 <div className="flex flex-col ">
                   <img
-                    src="ksa.svg"
+                    src="fpo.svg"
                     className="shadow-2xl rounded-full w-28 md:w-32"
                   ></img>
                   <p className="mt-4 text-center w-28 md:w-32">
@@ -193,7 +193,7 @@ export default function Home() {
                 </div>
                 <div className=" flex flex-col">
                   <img
-                    src="ksa.svg"
+                    src="str.svg"
                     className="shadow-2xl rounded-full w-28 md:w-32"
                   ></img>
                   <p className="mt-4 text-center w-28 md:w-32">
@@ -438,29 +438,29 @@ export default function Home() {
               pagination={{ clickable: true }}
               onSwiper={(swiper) => console.log(swiper)}
             >
-              <SwiperSlide className="max-md:text-center">
+              <SwiperSlide className="max-md:text-center md:text-xl">
                 <img
                   src="/ananthcofounder.webp"
                   className="pl-8 md:h-96 object-contain"
                 />
-                <h4 className="text-[#093A01] font-medium my-2">Prem Rathod</h4>
-                <p className="text-[#25CA0A] font-medium">Founder</p>
+                <h4 className="text-[#093A01] font-medium md:pl-8 md:mt-4">Ananth</h4>
+                <p className="text-[#25CA0A] font-medium md:pl-8">Cofounder</p>
               </SwiperSlide>
-              <SwiperSlide className="max-md:text-center">
+              <SwiperSlide className="max-md:text-center md:text-xl">
                 <img
                   src="/premrathodfounder.webp"
                   className="pl-8 md:h-96 object-contain"
                 />
-                <h4 className="text-[#093A01] font-medium my-2">Ananth</h4>
-                <p className="text-[#25CA0A] font-medium">Cofounder</p>
+                <h4 className="text-[#093A01] font-medium md:pl-8 md:mt-4">Prem Rathod</h4>
+                <p className="text-[#25CA0A] font-medium md:pl-8">Founder</p>
               </SwiperSlide>
-              <SwiperSlide className="max-md:text-center">
+              <SwiperSlide className="max-md:text-center md:text-xl">
                 <img
                   src="/satishchiefstrategicofficer.webp"
                   className="pl-8 md:h-96 object-contain"
                 />
-                <h4 className="text-[#093A01] font-medium my-2">Satish</h4>
-                <p className="text-[#25CA0A] font-medium">
+                <h4 className="text-[#093A01] font-medium md:pl-8 md:pt-4">Satish</h4>
+                <p className="text-[#25CA0A] font-medium md:pl-8">
                   Chief Strategic Officer
                 </p>
               </SwiperSlide>
