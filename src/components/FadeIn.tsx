@@ -2,7 +2,7 @@ import { InView } from "react-intersection-observer";
 
 export default function FadeIn({ children }: { children: React.ReactNode }) {
   return (
-    <InView threshold={0.3}>
+    <InView threshold={0.25}>
       {({ inView, ref, entry }) => (
         <div
           ref={ref}
