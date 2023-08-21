@@ -19,7 +19,7 @@ export default function Home() {
       <Head>
         <title>Kisan Saathi</title>
       </Head>
-      <main className={`${poppins.className}`}>
+      <main id="home" className={`${poppins.className}`}>
         <div className="max-md:bg-mobileBG md:bg-landing bg-cover md:bg-bottom w-full h-screen bg-no-repeat z-50">
           <div className="flex w-full md:w-[50%] text-center md:text-start h-full pt-[40%] md:pt-[16%] md:pb-[20%] md:py-0 md:px-0 py-10 text-xl md:text-3xl px-10 md:pl-40 flex-col">
             <h1 className="text-transparent bg-clip-text bg-gradient-to-r text-4xl font-semibold from-[#FFFFFF] to-[#BCF5B2]">
@@ -39,7 +39,10 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="flex flex-col-reverse space-x-10 relative pt-[5%] px-8 md:px-0 md:pl-0 pb-[20%] z-20">
+        <div
+          id="about"
+          className="flex flex-col-reverse space-x-10 relative pt-[5%] px-8 md:px-0 md:pl-0 pb-[20%] z-20"
+        >
           <div className="flex text-center md:text-start md:w-1/3 px-8 md:px-0 md:pl-36 flex-col">
             <h2 className="text-2xl md:text-4xl py-8 font-semibold text-[#093A01] ">
               About <span className="text-[#25CA0A]">Us</span>
@@ -65,7 +68,10 @@ export default function Home() {
           <img src="challenges.webp" className="hidden md:block h-[60%]"></img>
           <img src="android.webp" className="md:hidden"></img>
         </div>
-        <h2 className="text-2xl md:text-4xl flex gap-2 py-10 justify-center font-semibold capitalize">
+        <h2
+          id="services"
+          className="text-2xl md:text-4xl flex gap-2 py-10 justify-center font-semibold capitalize"
+        >
           Our <span className="text-[#25CA0A]"> services</span>
         </h2>
         <div className="flex flex-col justify-center text-[#093A01] font-semibold gap-8 px-4 md:px-20">
@@ -190,7 +196,10 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <h2 className="text-2xl md:text-4xl px-4 text-center pb-4 pt-24 font-semibold">
+        <h2
+          id="featured"
+          className="text-2xl md:text-4xl px-4 text-center pb-4 pt-24 font-semibold"
+        >
           Insight Corner :{" "}
           <span className="text-[#25CA0A]">Featured articles</span>
         </h2>
@@ -363,7 +372,10 @@ export default function Home() {
             </Marquee>
           </div>
         </div>
-        <h2 className="text-2xl md:text-4xl font-semibold text-center pb-4">
+        <h2
+          id="people"
+          className="text-2xl pt-10 md:text-4xl font-semibold text-center pb-4"
+        >
           Meet <span className="text-[#25CA0A]">Our Team</span>
         </h2>
         <div className="relative px-16 md:px-40">
@@ -427,7 +439,7 @@ export default function Home() {
           </Swiper>
         </div>
         <div className="md:pl-20 px-8 py-5 text-[#093A01]/95">
-          <div className="relative py-10 md:py-60">
+          <div id="contactus" className="relative py-10 md:py-60">
             <h3 className="font-semibold text-3xl md:text-2xl">Contact Us</h3>
             <form
               action="#"

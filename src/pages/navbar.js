@@ -1,4 +1,4 @@
-import Link from "next/link";
+import a from "next/link";
 import { useEffect, useRef, useState } from "react";
 
 export default function Navbar() {
@@ -23,16 +23,15 @@ export default function Navbar() {
       >
         <img src="logo.webp" className="h-[4em] px-8"></img>
         <div className="md:flex hidden text-right flex-row gap-12 text-[#093A01] font-semibold">
-          <Link href="#">Home</Link>
-          <Link href="#">About us</Link>
-          <Link href="#">Service</Link>
-          <Link href="#">People </Link>
-          <Link href="#">Featured articles</Link>
-          <Link href="#">Careers</Link>
-          <Link href="#">Contact us</Link>
+          <a href="#home">Home</a>
+          <a href="#about">About us</a>
+          <a href="#services">Services</a>
+          <a href="#people">People </a>
+          <a href="#featured">Featured articles</a>
+          <a href="#">Careers</a>
+          <a href="#contactus">Contact us</a>
         </div>
         <div className="flex flex-row gap-8 ">
-          
           <div className="flex flex-col">
             <img
               onClick={() => {
@@ -45,17 +44,18 @@ export default function Navbar() {
         </div>
       </div>
       <div
+        onClick={(e) => e.target !== e.currentTarget && setVal(false)}
         className={`${
           val === true ? "flex" : "hidden"
         } md:hidden text-center py-4 flex-col items-center gap-8 text-[#093A01] font-semibold`}
       >
-        <Link href="#">Home</Link>
-        <Link href="#">About us</Link>
-        <Link href="#">Service</Link>
-        <Link href="#">People </Link>
-        <Link href="#">Featured articles</Link>
-        <Link href="#">Careers</Link>
-        <Link href="#">Contact us</Link>
+        <a href="#home">Home</a>
+        <a href="#about">About us</a>
+        <a href="#services">Services</a>
+        <a href="#people">People </a>
+        <a href="#featured">Featured articles</a>
+        <a href="#">Careers</a>
+        <a href="#contactus">Contact us</a>
       </div>
     </div>
   );
