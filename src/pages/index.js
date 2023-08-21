@@ -405,17 +405,20 @@ export default function Home() {
             onSwiper={(swiper) => console.log(swiper)}
           >
             <SwiperSlide className="max-md:text-center">
-              <img src="/ananthcofounder.webp" className="pl-8" />
+              <img src="/ananthcofounder.webp" className="pl-8 h-96" />
               <h4 className="text-[#093A01] font-medium my-2">Prem Rathod</h4>
               <p className="text-[#25CA0A] font-medium">Founder</p>
             </SwiperSlide>
             <SwiperSlide className="max-md:text-center">
-              <img src="/premrathodfounder.webp" className="pl-8" />
+              <img src="/premrathodfounder.webp" className="pl-8 h-96" />
               <h4 className="text-[#093A01] font-medium my-2">Ananth</h4>
               <p className="text-[#25CA0A] font-medium">Cofounder</p>
             </SwiperSlide>
             <SwiperSlide className="max-md:text-center">
-              <img src="/satishchiefstrategicofficer.webp" className="pl-8" />
+              <img
+                src="/satishchiefstrategicofficer.webp"
+                className="pl-8 h-96"
+              />
               <h4 className="text-[#093A01] font-medium my-2">Satish</h4>
               <p className="text-[#25CA0A] font-medium">
                 Chief Strategic Officer
